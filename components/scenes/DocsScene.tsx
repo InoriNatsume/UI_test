@@ -4,7 +4,7 @@ import { Book, ChevronRight } from 'lucide-react';
 
 export const DocsScene: React.FC<{ onTermSelect: (id: string) => void, activeTermId: string | null }> = ({ onTermSelect, activeTermId }) => {
   return (
-    <div className="h-full w-full bg-slate-900 flex flex-col border border-slate-700 rounded-xl shadow-2xl overflow-hidden relative">
+    <div className="h-full w-full bg-slate-900 flex flex-col border border-slate-700 rounded-xl shadow-2xl overflow-visible relative pt-4">
       {/* Top Navigation */}
       <TermSpotlight termId="header" label="Docs Header" isActive={activeTermId === 'header'} onSelect={onTermSelect} className="h-14 border-b border-slate-800 flex items-center px-6 bg-slate-900 z-20">
         <div className="flex items-center gap-2 font-bold text-slate-100 mr-8">

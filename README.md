@@ -1,1 +1,1 @@
-UI 용어
+https://inorinatsume.github.io/UI_test/

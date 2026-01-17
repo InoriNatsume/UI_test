@@ -4,7 +4,7 @@ import { ChevronRight, Star, Globe, Zap, Shield, ArrowRight } from 'lucide-react
 
 export const LandingScene: React.FC<{ onTermSelect: (id: string) => void, activeTermId: string | null }> = ({ onTermSelect, activeTermId }) => {
   return (
-    <div className="h-full w-full bg-white overflow-y-auto relative border border-slate-300 rounded-xl shadow-2xl">
+    <div className="h-full w-full bg-white overflow-y-auto overflow-x-visible relative border border-slate-300 rounded-xl shadow-2xl pt-4">
       {/* Header */}
       <TermSpotlight termId="header" label="Sticky Header" isActive={activeTermId === 'header'} onSelect={onTermSelect} className="sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -6,7 +6,7 @@ export const AnimationScene: React.FC<{ onTermSelect: (id: string) => void, acti
   const [bounceKey, setBounceKey] = useState(0);
 
   return (
-    <div className="h-full w-full bg-slate-900 flex flex-col relative border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
+    <div className="h-full w-full bg-slate-900 flex flex-col relative border border-slate-700 rounded-xl shadow-2xl overflow-visible pt-4">
       <div className="h-16 border-b border-slate-800 flex items-center justify-between px-6 shrink-0 bg-slate-900/50 backdrop-blur">
         <h1 className="text-xl font-bold text-white">Motion & Physics Lab</h1>
         <button 

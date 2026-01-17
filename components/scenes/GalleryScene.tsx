@@ -17,7 +17,7 @@ export const GalleryScene: React.FC<{ onTermSelect: (id: string) => void, active
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="h-full w-full bg-slate-900 flex flex-col relative border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
+    <div className="h-full w-full bg-slate-900 flex flex-col relative border border-slate-700 rounded-xl shadow-2xl overflow-visible pt-4">
       {/* Header */}
       <div className="h-16 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-6 shrink-0 z-10">
         <h1 className="text-xl font-bold text-slate-100">Photo Gallery</h1>

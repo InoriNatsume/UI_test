@@ -8,7 +8,7 @@ export const LayoutScene: React.FC<{ onTermSelect: (id: string) => void, activeT
   const [mode, setMode] = useState<LayoutMode>('3-col');
 
   return (
-    <div className="h-full w-full bg-slate-900 flex flex-col border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
+    <div className="h-full w-full bg-slate-900 flex flex-col border border-slate-700 rounded-xl shadow-2xl overflow-visible pt-4">
       {/* Control Panel */}
       <div className="bg-slate-800 border-b border-slate-700 p-4 flex flex-wrap items-center gap-4 shrink-0">
         <h2 className="text-sm font-bold text-slate-300 uppercase tracking-wider mr-4">Layout Lab</h2>

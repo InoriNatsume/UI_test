@@ -3,7 +3,7 @@ import { TermSpotlight } from '../TermSpotlight';
 
 export const DesignScene: React.FC<{ onTermSelect: (id: string) => void, activeTermId: string | null }> = ({ onTermSelect, activeTermId }) => {
   return (
-    <div className="h-full w-full bg-slate-50 overflow-y-auto relative border border-slate-300 rounded-xl shadow-2xl p-8">
+    <div className="h-full w-full bg-slate-50 overflow-y-auto overflow-x-visible relative border border-slate-300 rounded-xl shadow-2xl p-8 pt-6">
       <div className="max-w-5xl mx-auto space-y-12">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-slate-900">Design System</h1>

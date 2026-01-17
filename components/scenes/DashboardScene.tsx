@@ -4,7 +4,7 @@ import { Search, Bell, Menu, MoreVertical, TrendingUp, Users, DollarSign, Activi
 
 export const DashboardScene: React.FC<{ onTermSelect: (id: string) => void, activeTermId: string | null }> = ({ onTermSelect, activeTermId }) => {
   return (
-    <div className="flex h-full w-full bg-slate-900 overflow-hidden relative border border-slate-700 rounded-xl shadow-2xl">
+    <div className="flex h-full w-full bg-slate-900 overflow-visible relative border border-slate-700 rounded-xl shadow-2xl pt-4">
       {/* Sidebar */}
       <TermSpotlight 
         termId="sidebar" 

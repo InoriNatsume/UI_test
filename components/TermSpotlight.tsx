@@ -23,6 +23,7 @@ export const TermSpotlight: React.FC<TermSpotlightProps> = ({
   return (
     <div 
       className={`relative cursor-pointer transition-all duration-200 ${className}`}
+      style={{ marginTop: (isHovered || isActive) ? '16px' : '0', transition: 'margin 0.2s ease' }}
       onClick={(e) => {
         e.stopPropagation();
         onSelect(termId);
@@ -51,7 +52,7 @@ export const TermSpotlight: React.FC<TermSpotlightProps> = ({
       {/* Label Tag (Visible on hover or active) */}
       <div 
         className={`
-          absolute -top-3 left-4 z-20 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm transition-all duration-200 flex items-center gap-1
+          absolute -top-4 left-4 z-50 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-lg transition-all duration-200 flex items-center gap-1 whitespace-nowrap
           ${isActive 
             ? 'bg-primary-600 text-white opacity-100 translate-y-0' 
             : isHovered

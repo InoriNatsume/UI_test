@@ -74,9 +74,9 @@ const App: React.FC = () => {
         </div>
 
         {/* Main Content Area (Scene) */}
-        <main className="flex-1 overflow-hidden bg-slate-950 p-4 md:p-6 lg:p-8 relative">
+        <main className="flex-1 overflow-y-auto overflow-x-visible bg-slate-950 p-4 md:p-6 lg:p-8 relative">
            {/* Scene Container */}
-           <div className="w-full h-full max-w-[1600px] mx-auto transition-all duration-300 ease-in-out">
+           <div className="w-full h-full max-w-[1600px] mx-auto transition-all duration-300 ease-in-out pt-2">
               {renderScene()}
            </div>
         </main>
